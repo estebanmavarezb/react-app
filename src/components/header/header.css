@@ -1,0 +1,98 @@
+.site-header {
+    background-image: url(../../img/sushi-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+}
+
+.site-header_opacity::after {
+    content: '';
+    background-color: rgba(0, 0, 0, .4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.text-header {
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.text-header p {
+    font-size: 2.2rem;
+}
+
+.text-header .separador {
+    color: goldenrod;
+    font-size: 40px;
+    position: relative;
+}
+
+.separador::after {
+    content: '';
+    position: absolute;
+    width: 35%;
+    height: 2px;
+    background-color: rgb(235, 184, 55);
+    top: 44%;
+    right: 40px;
+}
+
+.separador::before {
+    content: '';
+    position: absolute;
+    width: 35%;
+    height: 2px;
+    background-color: rgb(235, 184, 55);
+    top: 44%;
+    left: 40px;
+}
+
+
+@media (min-width: 768px) {
+    .text-header {
+        margin-top: 15rem;
+    }
+
+    .separador::after {
+        width: 25%;
+        right: 175px;
+     
+    }
+    
+    .separador::before {
+        width: 25%;
+        left: 175px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .separador::after {
+        width: 25%;
+        right: 225px;
+     
+    }
+    
+    .separador::before {
+        width: 25%;
+        left: 225px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .separador::after {
+        right: 350px;
+     
+    }
+    
+    .separador::before {
+        left: 350px;
+    }
+}

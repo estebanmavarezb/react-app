@@ -1,35 +1,127 @@
-@media (min-width: 768px) {
-    .bar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 15rem 0 10rem;
-    }
+.bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.nav-bar {
+    background-color: black;
+    height: 100vh;
+    width: 75%;
+    position: fixed;
+    z-index: 900;
+    transform: translateX(-600px);
+    transition: transform .7s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.active {
+    transform: translateX(-60px);
+    transition: transform .7s;
+}
+
+.hamburguer,
+.close {
+    display: block;
+}
+
+.hamburguer {
+    position: absolute;
+    left: 25px;
+    top: 0px;
+    font-size: 35px;
+}
+
+.hamburguer i {
+    cursor: pointer;
+    color: white;
+}
+
+.close {
+    position: absolute;
+    z-index: 1000;
+    left: 40px;
+    top: 0px;
+    font-size: 35px;
+}
+
+.close i {
+    cursor: pointer;
+    color: white;
+}
+
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
 .bar a {
     text-decoration: none;
 }
 
 .bar a h1 {
-    color: black;
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 400;
+}
+
+.bar h1 span {
+    font-weight: 700;
 }
 
 .nav-bar a {
     text-align: center;
-    display: block;
     font-size: 1.8rem;
-    color: black;
+    color: #ffffff;
     text-decoration: none;
 }
 
 @media (min-width: 768px) {
-    .nav-bar a {
-        display: inline;
-        margin-right: 2rem;
+    .bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5rem 0 5rem;
+        position: relative;
+ 
     }
 
-    .nav-bar a:last-of-type {
-        margin: 0;
+    .nav-bar {
+        background-color: unset;
+        height: unset;
+        width: unset;
+        position: relative;
+        z-index: 900;
+        transform: translateX(0px);
+    }
+
+    .hamburguer,
+    .close {
+        display: none;
+    }
+
+    .nav-bar ul {
+        flex-direction: row;
+    }
+    
+    .nav-bar ul li {
+        margin-right: 2rem
+    }
+
+    .nav-bar ul li:last-of-type {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 1020px) {
+    .bar {
+        padding: 0 15rem 0 10rem;
     }
 }
