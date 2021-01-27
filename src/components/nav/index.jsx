@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import './nav.css'
-import Cart from '../cart/index.jsx'
+import CartWidget from '../cart/index.jsx'
 
 
 function NavBar(){
@@ -33,7 +33,7 @@ function NavBar(){
                 <li><a href="!#">Nosotros</a></li>
                 <li><a href="!#">Cursos</a></li>
                 <li><a href="!#">Contacto</a></li>
-                <li><a href="!#"><Cart /></a></li>
+                <li><a href="!#"><CartWidget /></a></li>
             </ul>
         </nav>
         

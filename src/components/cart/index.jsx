@@ -1,9 +1,9 @@
 import './cart.css'
 
-function Cart(){
+function CartWidget(){
     return (
         <a>carrito</a>
     );
   }
 
-export default Cart
+export default CartWidget
