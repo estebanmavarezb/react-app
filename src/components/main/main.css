@@ -1,0 +1,45 @@
+
+.blog,
+.cursos {
+    flex: 0 0 100%;
+}
+
+.cursos {
+    order: -1;
+}
+
+@media (min-width: 768px) {
+
+    .blog {
+        flex-basis: calc(66.6%);
+    }
+
+    .cursos {
+        flex-basis: calc(33.3% - 4rem);
+        order: 2;
+    }
+}
+
+/* opcional */
+
+ /* .entrada-blog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.entrada-blog .imagen {
+    flex: 0 0 40%;
+}
+
+.entrada-blog .contenido-blog {
+    flex: 0 0 calc(60% - 2rem);
+} */
+
+.entrada-blog {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.entrada-blog:last-of-type {
+    border: none;
+}

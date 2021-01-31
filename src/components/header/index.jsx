@@ -1,12 +1,12 @@
 import './header.css'
-import NavBar from '../nav/index.jsx'
+import NavBarComponent from '../nav/index.jsx'
 
 
-function Header(){
+function HeaderComponent(){
     return (
     <header className="site-header">
         <div className="site-header_opacity"></div>
-        <NavBar />
+        <NavBarComponent />
         <div className="text-header">
             <h2 className="no-margin">Blog de Sushi con consejos y cursos</h2>
             <p className="separador no-margin">*</p>
@@ -17,4 +17,4 @@ function Header(){
     );
   }
 
-export default Header
+export default HeaderComponent

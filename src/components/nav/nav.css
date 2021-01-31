@@ -64,6 +64,11 @@
     text-decoration: none;
 }
 
+.bar a:hover {
+    color: goldenrod;
+    transition: color .5s;
+}
+
 .bar a h1 {
     position: relative;
     color: #ffffff;
@@ -77,7 +82,7 @@
 
 .nav-bar a {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 18px;
     color: #ffffff;
     text-decoration: none;
 }
@@ -88,7 +93,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 0 5rem 0 5rem;
+        padding: 0 50px 0 50px;
         position: relative;
  
     }
@@ -113,7 +118,7 @@
     }
     
     .nav-bar ul li {
-        margin-right: 2rem
+        margin-right: 20px;
     }
 
     .nav-bar ul li:last-of-type {
@@ -123,6 +128,6 @@
 
 @media (min-width: 1020px) {
     .bar {
-        padding: 0 15rem 0 10rem;
+        padding: 0 150px 0 100px;
     }
 }

@@ -3,7 +3,7 @@ import './nav.css'
 import CartWidget from '../cart/index.jsx'
 
 
-function NavBar(){
+function NavBarComponent(){
     const [open, setOpen] = useState(false);
 
     const openMenu = () => {
@@ -41,4 +41,4 @@ function NavBar(){
     );
 }
 
-export default NavBar
+export default NavBarComponent

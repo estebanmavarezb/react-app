@@ -1,0 +1,26 @@
+.carrito {
+    position: relative;
+}
+
+.contenedor-carrito {
+    display: none;
+    width: 320px;
+    min-height: 50vh;
+    background-color: white;
+    position: absolute;
+    top: 45px;
+    right: -145px;
+    border-radius: 25px;
+    cursor: auto;
+}
+
+.active-cart {
+    display: block;
+}
+
+.carrito .contenedor-carrito .text-cart {
+    color: black;
+    margin: 0;
+    border-bottom: 1px solid black;
+    font-size: 22px;
+}
