@@ -3,6 +3,7 @@
 }
 
 .contador a {
+    cursor: pointer;
     text-align: center;
     color: white;
 }
