@@ -75,6 +75,10 @@ img {
   display: block;
 }
 
+.al-center {
+  align-self: center;
+}
+
 /** grid **/
 @media (min-width: 768px) {
   .grid {
