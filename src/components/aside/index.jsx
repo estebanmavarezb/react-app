@@ -9,6 +9,7 @@ function AsideComponent() {
             <ul className="cursos-lista">
                 <ItemCourseComponent titulo="Técnicas de preparacion de sushi"/>
                 <ItemCourseComponent titulo="4 Recetas de sushi para principiantes"/>
+                <ItemCourseComponent titulo="La historia del sushi"/>
                 
             </ul>
         </aside>
