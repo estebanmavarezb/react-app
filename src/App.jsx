@@ -1,14 +1,13 @@
 import './App.css';
 import MainContentComponents from './components/firstcontent/mainContent';
-import FooterComponent from './components/footer/index';
-import HeaderComponent from './components/header';
+import Layout from './components/layaout/layout'
 
 function App() {
   return (
     <>
-      <HeaderComponent />
-      <MainContentComponents />
-      <FooterComponent />
+      <Layout>
+        <MainContentComponents />
+      </Layout>
     </>
   );
 }

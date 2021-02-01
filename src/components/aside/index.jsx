@@ -1,4 +1,4 @@
-import ItemCourseContainer from '../cursos'
+import ItemCourseComponent from '../cursos'
 import './aside.css'
 
 function AsideComponent() {
@@ -7,7 +7,8 @@ function AsideComponent() {
             <h2>Nuestros Cursos y Talleres</h2>
 
             <ul className="cursos-lista">
-                <ItemCourseContainer />
+                <ItemCourseComponent titulo="Técnicas de preparacion de sushi"/>
+                <ItemCourseComponent titulo="4 Recetas de sushi para principiantes"/>
                 
             </ul>
         </aside>
