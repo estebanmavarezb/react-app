@@ -5,7 +5,7 @@ function FooterComponent() {
         <footer className="site-footer">
         <div className="contenedor">
             <div id="barra">
-                <h1 className="no-margin">Blog<span>DeCafé</span></h1>
+                <h1 className="no-margin">Sushi<span>Blog</span></h1>
 
                 <nav className="nav-bar-footer">
                     <a href="!#">Nosotros</a>

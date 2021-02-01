@@ -1,5 +1,5 @@
-import image from '../../img/sushi-main.jpg'
-import BtnInfoComponent from '../btninfo/index'
+import image from '../../img/sushi-main.jpg';
+import BtnInfoComponent from '../btninfo/index';
 
 function ItemBlogContainer({titulo}) {
     return(

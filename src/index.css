@@ -74,3 +74,37 @@ img {
 .d-block {
   display: block;
 }
+
+/** grid **/
+@media (min-width: 768px) {
+  .grid {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+
+  .centrar-columnas {
+      justify-content: center;
+  }
+
+  .columnas-4 {
+      flex: 0 0 calc(33.3% - 1rem);
+  }
+
+  .columnas-6 {
+      flex: 0 0 calc(50% - 1rem);
+  }
+  
+  .columnas-8 {
+      flex: 0 0 calc(66.6% - 1rem);
+  }
+
+  .columnas-10 {
+      flex: 0 0 calc(83.3% - 1rem);
+  }
+
+  .columnas-12 {
+      flex: 0 0 100%;
+  }
+
+}
