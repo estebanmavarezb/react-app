@@ -1,0 +1,22 @@
+.contador {
+    display: flex;
+}
+
+.contador a {
+    cursor: pointer;
+    text-align: center;
+    color: white;
+}
+
+.contador span {
+    width: 10%;
+    text-align: center;
+    border: 1px solid;
+}
+
+.btn-contador {
+    display: block;
+    align-items: center;
+    background-color: black;
+    width: 10%;
+}

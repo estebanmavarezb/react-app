@@ -1,11 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
-import NavBar from './components/nav/navbar';
+import Layout from './components/layaout/layout';
+import MainContentComponents from './components/firstcontent/mainContent';
+import CursosContentComponents from './components/cursosContent/index'
+import AboutContent from './components/aboutContent';
+import BlogContent from './components/blogContent';
+import ContactContentComponent from './components/contactContent';
+
+
+
 
 function App() {
   return (
     <>
-      <NavBar />
+      <Layout>
+        <CursosContentComponents />
+      </Layout>
     </>
   );
 }

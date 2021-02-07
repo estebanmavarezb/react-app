@@ -1,0 +1,53 @@
+/** cursos sidebar **/
+
+.cursos-lista {
+    padding: 0;
+    list-style: none;
+}
+
+.curso {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.curso:last-of-type {
+    border-bottom: none;
+}
+
+.curso p {
+    font-family: 'PT sans', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.curso p span, 
+.curso p.descripcion {
+    font-weight: 400;
+}
+
+.botones-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.botones-cards .contador  {
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .botones-cards {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .botones-cards .contador  {
+        flex: 0 0 calc(40% - 1rem);
+        height: fit-content;
+    }
+
+    .botones-cards .btn {
+        flex: 0 0 calc(50% - 1rem);
+    }
+}

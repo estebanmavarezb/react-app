@@ -1,0 +1,26 @@
+
+.cursos-lista {
+    padding: 0;
+    list-style: none;
+}
+
+.curso {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.curso:last-of-type {
+    border-bottom: none;
+}
+
+.curso p {
+    font-family: 'PT sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.curso p span, 
+.curso p.descripcion {
+    font-weight: 400;
+}

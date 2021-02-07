@@ -1,0 +1,12 @@
+
+.contenido-principal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+    .contenido-principal {
+        justify-content: space-between;
+    }
+
+}
