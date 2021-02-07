@@ -1,12 +1,12 @@
 import BtnAddCart from "../btncart";
 import ContadorComponent from "../contador";
 
-function ItemCourseComponent({titulo}) {
+function ItemCourseComponent({prod}) {
     return (
         <li className="curso">
-            <h4 className="no-margin">{titulo}</h4>
-            <p className="no-margin">Precio: <span>$500</span></p>
-            <p className="no-margin">Cupo: <span>20</span></p>
+            <h4 className="no-margin">{prod.name}</h4>
+            <p className="no-margin">Precio: <span>${prod.price}</span></p>
+            <p className="no-margin">Cupo: <span>{prod.cupo}</span></p>
             <ContadorComponent />
             <BtnAddCart />
         </li>

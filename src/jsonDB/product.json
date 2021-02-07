@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "img": "sushi-main.jpg",
+        "name": "Técnicas de preparacion de sushi",
+        "price": 1200,
+        "cupo": 10,
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem fugiat asperiores assumenda aut iste consectetur libero voluptates illo nisi, quasi fuga ea vero, mollitia quia minus minima adipisci consequuntur temporibus. Quidem fugiat asperiores assumenda aut iste consectetur libero voluptates illo nisi, quasi fuga ea vero, mollitia quia minus minima adipisci consequuntur temporibus"
+    },
+    {
+        "id": 2,
+        "img": "sushi-main.jpg",
+        "name": "4 Recetas de sushi para principiantes",
+        "price": 800,
+        "cupo": 8,
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem fugiat asperiores assumenda aut iste consectetur libero voluptates illo nisi, quasi fuga ea vero, mollitia quia minus minima adipisci consequuntur temporibus. Quidem fugiat asperiores assumenda aut iste consectetur libero voluptates illo nisi, quasi fuga ea vero, mollitia quia minus minima adipisci consequuntur temporibus"
+    },
+    {
+        "id": 3,
+        "img": "sushi-main.jpg",
+        "name": "La historia del sushi",
+        "price": 500,
+        "cupo": 20,
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem fugiat asperiores assumenda aut iste consectetur libero voluptates illo nisi, quasi fuga ea vero, mollitia quia minus minima adipisci consequuntur temporibus. Quidem fugiat asperiores assumenda aut iste consectetur libero voluptates illo nisi, quasi fuga ea vero, mollitia quia minus minima adipisci consequuntur temporibus"
+    }
+    
+]

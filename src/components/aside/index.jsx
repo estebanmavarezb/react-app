@@ -1,16 +1,15 @@
 import ItemCourseComponent from '../cursos'
 import './aside.css'
 
-function AsideComponent() {
+function AsideComponent({product}) {
     return (
         <aside className="cursos">
             <h2>Nuestros Cursos y Talleres</h2>
-
+            
             <ul className="cursos-lista">
-                <ItemCourseComponent titulo="Técnicas de preparacion de sushi"/>
-                <ItemCourseComponent titulo="4 Recetas de sushi para principiantes"/>
-                <ItemCourseComponent titulo="La historia del sushi"/>
-                
+                {product.map (prod => (
+                    <ItemCourseComponent prod={prod}/>
+                ))}  
             </ul>
         </aside>
     )
