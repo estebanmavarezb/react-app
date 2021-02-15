@@ -1,5 +1,6 @@
-import React,{useState} from 'react'
-import './cart.css'
+import React,{useState} from 'react';
+import { FaShoppingCart } from "react-icons/fa";
+import './cart.css';
 
 
 function CartWidget(){
@@ -11,10 +12,10 @@ function CartWidget(){
 
     return (
         <div className="carrito">
-          <a onClick={openCart}>carrito</a>
+          <FaShoppingCart className="cart" onClick={openCart}/>
 
           <div className={open ? 'contenedor-carrito active-cart' : 'contenedor-carrito'}>
-             <h1 className="text-cart">Tu Carrito</h1>
+             <h1 className="text-cart text-center">Tu Carrito</h1>
           </div>
         </div>
         

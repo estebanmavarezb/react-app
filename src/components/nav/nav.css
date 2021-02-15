@@ -115,6 +115,7 @@
 
     .nav-bar ul {
         flex-direction: row;
+        align-items: flex-end;
     }
     
     .nav-bar ul li {

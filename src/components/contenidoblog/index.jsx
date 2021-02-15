@@ -10,7 +10,7 @@ function ItemBlogContainer({entry}) {
                 <div className="contenido-blog">
                     <h3 className="no-margin">{entry.name}</h3>
                     <p>{entry.description}</p>
-                    <BtnInfoComponent />
+                    <BtnInfoComponent id={entry.id}/>
                 </div>
             </article>
     )

@@ -1,8 +1,9 @@
+import { Link } from 'react-router-dom'
 import './btninfo.css'
 
-function BtnInfoComponent() {
+function BtnInfoComponent({id}) {
     return (
-        <a href="!#" className="btn btn-primario">Leer Entrada</a>
+        <Link className="btn btn-primario" to={`/informacion/${id}`}>Leer Entrada</Link>
     )
 }
 
