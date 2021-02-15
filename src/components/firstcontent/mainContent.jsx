@@ -22,6 +22,7 @@ function MainContentComponents() {
         getData(fileBlog).then(result => setBlog(result));
         getData(fileProduct).then(result => setProduct(result));
     })
+    
     return (
         <div className="contenido-principal contenedor">
             <MainComponent blog={blog}/>

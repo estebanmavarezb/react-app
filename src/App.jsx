@@ -1,4 +1,5 @@
 import './App.css';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Layout from './components/layaout/layout';
 import MainContentComponents from './components/firstcontent/mainContent';
 import CursosContentComponents from './components/cursosContent/index'
@@ -12,9 +13,28 @@ import ContactContentComponent from './components/contactContent';
 function App() {
   return (
     <>
+    <BrowserRouter>
       <Layout>
-        <CursosContentComponents />
+        <Switch>
+          <Route exact path="/home">
+            <MainContentComponents />
+          </Route>
+          <Route exact path="/cursos">
+            <CursosContentComponents />
+          </Route>
+          <Route exact path="/about-us">
+            <AboutContent />
+          </Route>
+          <Route exact path="/blog">
+            <BlogContent />
+          </Route>
+          <Route exact path="/contact">
+            <ContactContentComponent />
+          </Route>
+        </Switch>
       </Layout>
+    </BrowserRouter>
+      
     </>
   );
 }

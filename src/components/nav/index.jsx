@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import './nav.css'
 import CartWidget from '../cart/index.jsx'
+import { Link, NavLink } from 'react-router-dom';
 
 
 function NavBarComponent(){
@@ -13,16 +14,14 @@ function NavBarComponent(){
     return (
 
     <div className="bar">
-        <a href="!#">
+        <Link to={`/home`}>
             <h1 className="no-margin">Sushi<span>Blog</span></h1>
-        </a>
-
+        </Link>
         <div className="hamburguer" onClick={openMenu}>
             <i>
                 x
             </i>
         </div>
-        
         <nav className={open ? 'nav-bar active' : 'nav-bar'}>
         <div className="close" onClick={openMenu}>
             <i>
@@ -30,10 +29,10 @@ function NavBarComponent(){
             </i>
         </div>
             <ul>
-                <li><a href="!#">Nosotros</a></li>
-                <li><a href="!#">Cursos</a></li>
-                <li><a href="!#">Contacto</a></li>
-                <li><a href="!#"><CartWidget /></a></li>
+                <li><NavLink to={`/about-us`}>Nosotros</NavLink></li>
+                <li><NavLink to={`/cursos`}>Cursos</NavLink></li>
+                <li><NavLink to={`/contact`}>Contacto</NavLink></li>
+                <li><CartWidget /></li>
             </ul>
         </nav>
         
