@@ -6,6 +6,7 @@ import CursosContentComponents from './components/cursosContent/index'
 import AboutContent from './components/aboutContent';
 import BlogContent from './components/blogContent';
 import ContactContentComponent from './components/contactContent';
+import AboutInfo from './components/contenido/info';
 
 
 
@@ -30,6 +31,9 @@ function App() {
           </Route>
           <Route exact path="/contact">
             <ContactContentComponent />
+          </Route>
+          <Route exact path="/informacion/:id">
+            <AboutInfo />
           </Route>
         </Switch>
       </Layout>

@@ -4,6 +4,8 @@ import CartWidget from '../cart/index.jsx'
 import { Link, NavLink } from 'react-router-dom';
 
 
+
+
 function NavBarComponent(){
     const [open, setOpen] = useState(false);
 

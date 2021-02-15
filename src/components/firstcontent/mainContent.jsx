@@ -12,16 +12,14 @@ function MainContentComponents() {
 
     function getData(data) {
         return new Promise((resolve, reject) =>{
-            setTimeout(() => {
-                resolve(data)
-            }, 2000)
+            resolve(data)
         })
     }
 
     useEffect(() => {
         getData(fileBlog).then(result => setBlog(result));
         getData(fileProduct).then(result => setProduct(result));
-    })
+    }, [])
     
     return (
         <div className="contenido-principal contenedor">

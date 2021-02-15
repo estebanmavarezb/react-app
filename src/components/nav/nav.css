@@ -83,7 +83,7 @@
 .nav-bar a {
     text-align: center;
     font-size: 18px;
-    color: black;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -115,6 +115,7 @@
 
     .nav-bar ul {
         flex-direction: row;
+        align-items: flex-end;
     }
     
     .nav-bar ul li {
