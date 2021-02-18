@@ -17,7 +17,7 @@ function App() {
     <BrowserRouter>
       <Layout>
         <Switch>
-          <Route exact path="/home">
+          <Route exact path="/">
             <MainContentComponents />
           </Route>
           <Route exact path="/cursos">
