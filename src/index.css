@@ -112,3 +112,11 @@ img {
   }
 
 }
+
+.botones {
+  display: flex;
+}
+
+.botones .btn:nth-child(1){
+  margin-right: 10px;
+}

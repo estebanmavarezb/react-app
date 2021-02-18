@@ -1,4 +1,5 @@
 import BtnAddCart from "../btncart";
+import BtnInfoCurso from "../btnCusos/btnCrusos";
 import ContadorComponent from "../contador";
 
 function ItemCourseComponent({prod}) {
@@ -8,7 +9,10 @@ function ItemCourseComponent({prod}) {
             <p className="no-margin">Precio: <span>${prod.price}</span></p>
             <p className="no-margin">Cupo: <span>{prod.cupo}</span></p>
             <ContadorComponent />
-            <BtnAddCart />
+            <li className="botones">
+                <BtnAddCart />
+                <BtnInfoCurso />
+            </li>
         </li>
     )
 }

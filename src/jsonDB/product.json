@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "categoria": "curso",
         "img": "sushi-main.jpg",
         "name": "Técnicas de preparacion de sushi",
         "price": 1200,
@@ -9,6 +10,7 @@
     },
     {
         "id": 2,
+        "categoria": "curso",
         "img": "sushi-main.jpg",
         "name": "4 Recetas de sushi para principiantes",
         "price": 800,
@@ -17,6 +19,7 @@
     },
     {
         "id": 3,
+        "categoria": "curso",
         "img": "sushi-main.jpg",
         "name": "La historia del sushi",
         "price": 500,

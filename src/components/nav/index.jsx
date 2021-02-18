@@ -16,7 +16,7 @@ function NavBarComponent(){
     return (
 
     <div className="bar">
-        <Link to={`/home`}>
+        <Link to={`/`}>
             <h1 className="no-margin">Sushi<span>Blog</span></h1>
         </Link>
         <div className="hamburguer" onClick={openMenu}>
@@ -32,6 +32,7 @@ function NavBarComponent(){
         </div>
             <ul>
                 <li><NavLink to={`/about-us`}>Nosotros</NavLink></li>
+                <li><NavLink to={`/blog`}>Blog</NavLink></li>
                 <li><NavLink to={`/cursos`}>Cursos</NavLink></li>
                 <li><NavLink to={`/contact`}>Contacto</NavLink></li>
                 <li><CartWidget /></li>
