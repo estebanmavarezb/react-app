@@ -1,13 +1,26 @@
-import './blog.css'
-import BlogComponent from '../blogComponent'
+import React, {useEffect, useState} from 'react';
+import fileBlog from '../../jsonDB/dataBlog.json';
+import MainComponent from '../main';
 
-function BlogContent() {
+function BlogComponents() {
+
+    const [blog, setBlog] = useState([]);
+
+    function getData(data) {
+        return new Promise((resolve, reject) =>{
+            resolve(data)
+        })
+    }
+
+    useEffect(() => {
+        getData(fileBlog).then(result => setBlog(result));
+    }, [])
+    
     return (
-        <main className="contenedor">
-            <h2 className="text-center">Nuestro Blog</h2>
-            <BlogComponent />
-        </main>
+        <div className="contenido-principal blog-interno contenedor">
+            <MainComponent blog={blog}/>
+        </div>
     )
 }
 
-export default BlogContent
+export default BlogComponents

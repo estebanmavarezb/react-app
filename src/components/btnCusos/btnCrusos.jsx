@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 
-function BtnInfoCurso() {
+function BtnInfoCurso({id}) {
     return (
-        <Link className="btn btn-primario" to={`/cursos`}>ver cursos</Link>
+        <Link className="btn btn-primario" to={`/informacionCursos/${id}`}>ver detalle</Link>
     )
 }
 
