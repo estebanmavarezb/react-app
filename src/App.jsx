@@ -4,9 +4,11 @@ import Layout from './components/layaout/layout';
 import MainContentComponents from './components/firstcontent/mainContent';
 import CursosContentComponents from './components/cursosContent/index'
 import AboutContent from './components/aboutContent';
-import BlogContent from './components/blogContent';
 import ContactContentComponent from './components/contactContent';
 import AboutInfo from './components/contenido/info';
+import InfoCursosComponent from './components/informcaionCursos/infoCursosComponent';
+import BlogComponents from './components/blogContent';
+import CategoriasComponent from './components/categorias/categorias';
 
 
 
@@ -20,15 +22,17 @@ function App() {
           <Route exact path="/">
             <MainContentComponents />
           </Route>
-          <Route exact path="/cursos">
-            <CursosContentComponents />
+          
+          <Route exact path="/informacionCursos/:id">
+            <InfoCursosComponent />
+          </Route>
+          <Route exact path="/categoria/:categoria">
+            <CategoriasComponent />
           </Route>
           <Route exact path="/about-us">
             <AboutContent />
           </Route>
-          <Route exact path="/blog">
-            <BlogContent />
-          </Route>
+         
           <Route exact path="/contact">
             <ContactContentComponent />
           </Route>

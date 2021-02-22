@@ -1,8 +1,8 @@
 import React,{useState} from 'react'
 import './contador.css'
 
-function ContadorComponent() {
-    const [count, setCount] = useState(1);
+function ContadorComponent({count, setCount, cupo}) {
+    
 
     const restaSuma = (operacion) => {
        if (operacion === "-") {
@@ -13,8 +13,8 @@ function ContadorComponent() {
            }
            setCount (count - 1)
        } else if(operacion === "+") {
-            if(count === 10) {
-                alert('No mas de 10')
+            if(count === cupo) {
+                alert(`No mas de ${cupo}`)
                 setCount(10)
                 return;
             }

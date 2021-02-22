@@ -120,3 +120,17 @@ img {
 .botones .btn:nth-child(1){
   margin-right: 10px;
 }
+
+/*blog*/
+
+.blog-interno h2 {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+
+  .blog-interno .blog {
+    flex: 0 0 calc(100% - 1rem);
+  }
+
+}

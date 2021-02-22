@@ -26,16 +26,12 @@
     font-weight: 400;
 }
 
-.botones-cards {
-    display: flex;
-    flex-direction: column;
-}
-
+/* 
 .botones-cards .contador  {
     justify-content: center;
-}
+} */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .botones-cards {
         flex-direction: row;
         justify-content: center;
@@ -50,4 +46,4 @@
     .botones-cards .btn {
         flex: 0 0 calc(50% - 1rem);
     }
-}
+} */
