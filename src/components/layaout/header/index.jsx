@@ -1,5 +1,5 @@
 import './header.css'
-import NavBarComponent from '../nav/index.jsx'
+import NavBarComponent from '../../nav/index.jsx'
 
 
 function HeaderComponent(){

@@ -5,7 +5,7 @@ function BtnAddCart({count}) {
         alert(`Agregaste ${cantidad} cupos de cursos al carrito`)
     }
     return(
-        <a href="" className="btn btn-primario" onClick={() => agregarCart(count)}>Agregar Carrito</a>
+        <button href="" className="btn btn-primario" onClick={() => agregarCart(count)}>Agregar Carrito</button>
     )
 }
 

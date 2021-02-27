@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {useParams} from 'react-router-dom';
-import fileInformacionCurso from '../../jsonDB/product.json';
-import InfoCursoContent from '../informacionCurso/infoCursoContent';
+import fileInformacionCurso from '../../jsonDB/producto-curso.json';
+import InfoCursoContent from './informacionCurso/infoCursoContent.jsx';
 
 function InfoCursosComponent() {
 

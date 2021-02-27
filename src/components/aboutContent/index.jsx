@@ -1,5 +1,5 @@
 import './about.css'
-import AboutComponent from '../aboutComponent'
+import AboutComponent from '../aboutContent/aboutComponent/index.jsx'
 
 function AboutContent() {
     return (

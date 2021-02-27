@@ -1,5 +1,5 @@
 import './main.css'
-import ItemBlogContainer from '../contenidoblog'
+import ItemBlogContainer from '../contenidoblog/index.jsx'
 
 function MainComponent({blog}) {
     

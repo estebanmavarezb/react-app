@@ -17,8 +17,7 @@ function CategoriasComponent() {
 
     return(
         <>
-        {categorias && <CursosContentComponents />}
-        {!categorias &&  <BlogComponents />}
+            {categorias ? <CursosContentComponents /> : <BlogComponents />}
         </>
     )
 }

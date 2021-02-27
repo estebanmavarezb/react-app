@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react';
-import fileCurso from '../../jsonDB/product.json';
+import fileCurso from '../../jsonDB/producto-curso.json';
 import './cursosComponent.css';
 import CursosComponent from '../cursosComponent/index';
 

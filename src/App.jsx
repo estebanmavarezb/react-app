@@ -2,13 +2,14 @@ import './App.css';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Layout from './components/layaout/layout';
 import MainContentComponents from './components/firstcontent/mainContent';
-import CursosContentComponents from './components/cursosContent/index'
 import AboutContent from './components/aboutContent';
 import ContactContentComponent from './components/contactContent';
 import AboutInfo from './components/contenido/info';
 import InfoCursosComponent from './components/informcaionCursos/infoCursosComponent';
-import BlogComponents from './components/blogContent';
 import CategoriasComponent from './components/categorias/categorias';
+import FacturacionComponent from './components/metodosCompra/facturacionComponent/facturacionComponent.jsx';
+import CartComponent from './components/metodosCompra/CartComponent/cartComponent';
+import FormComponent from './components/metodosCompra/formularioCompra/form';
 
 
 
@@ -38,6 +39,15 @@ function App() {
           </Route>
           <Route exact path="/informacion/:id">
             <AboutInfo />
+          </Route>
+          <Route exact path="/cart">
+            <CartComponent />
+          </Route>
+          <Route exact path="/formulario">
+            <FormComponent />
+          </Route>
+          <Route exact path="/facturacion">
+            <FacturacionComponent />
           </Route>
         </Switch>
       </Layout>
