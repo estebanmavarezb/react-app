@@ -8,13 +8,14 @@ function CartWidget(){
 
   const openCart = () => {
       setOpen(!open)
+      
   }
 
     return (
         <div className="carrito">
-          <FaShoppingCart className="cart" onClick={openCart}/>
+          <FaShoppingCart className="cart" onMouseEnter={openCart}/>
 
-          <div className={open ? 'contenedor-carrito active-cart' : 'contenedor-carrito'}>
+          <div className={open ? 'contenedor-carrito active-cart' : 'contenedor-carrito'} onMouseLeave={openCart}>
              <h1 className="text-cart text-center">Tu Carrito</h1>
           </div>
         </div>

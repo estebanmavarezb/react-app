@@ -1,7 +1,8 @@
-import BtnAddCart from "../btncart";
-import BtnInfoCurso from "../btnCusos/btnCrusos";
-import ContadorComponent from "../contador";
+
+import BtnInfoCurso from "../boton/btninfo/index";
+import ContadorComponent from "../boton/contador/index.jsx";
 import {useState} from 'react';
+import BtnAddCart from "../boton/btnCart/index.js";
 
 function ItemCourseComponent({prod}) {
     const [count, setCount] = useState(1);

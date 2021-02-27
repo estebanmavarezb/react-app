@@ -134,3 +134,118 @@ img {
   }
 
 }
+
+
+/*page carrito*/
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.contenedor-productos {
+  position: relative;
+  overflow-y:auto;
+  border: 1px solid black;
+  min-height: 50vh;
+  max-height: 100%;
+}
+
+.informacion-factura {
+  display: flex;
+  width: 76%;
+  margin: 0 auto;
+  align-items: center;
+ justify-content: space-evenly;
+}
+
+.informacion-factura::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  top: 50px;
+}
+
+.informacion-factura p {
+  gap: 2rem;
+ }
+
+.informacion-factura p:nth-child(4) {
+  position: absolute;
+  right: 0;
+  padding-right: 10px;
+}
+
+
+
+.info-productos {
+  position: relative;
+  min-height: 50vh;
+  max-height: 100%;
+}
+
+
+
+.total-item {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.total-price {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: flex-end;
+}
+
+.total-item p,
+.total-price p {
+  margin-right: 10px;
+}
+
+.total-price::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  left: 0;
+  top: 0;
+}
+
+.productos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-producto {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.info-producto p{
+  flex: 0 0 calc(37% - 1rem);
+}
+
+.productos .btn-cart {
+  margin-right: 25px;
+  padding: 0.5rem 1rem;
+}
+
+.img-producto {
+  margin-left: 25px;
+}

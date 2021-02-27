@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import fileBlog from '../../jsonDB/dataBlog.json';
+import fileBlog from '../../jsonDB/producto-curso.json';
 import MainComponent from '../main';
 
 function BlogComponents() {

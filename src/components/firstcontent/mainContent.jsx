@@ -1,9 +1,9 @@
 import './mainContent.css'
 import React, {useEffect, useState} from 'react';
-import fileBlog from '../../jsonDB/dataBlog.json';
-import fileProduct from '../../jsonDB/product.json';
-import MainComponent from '../main';
-import AsideComponent from '../aside';
+import fileBlog from '../../jsonDB/producto-curso.json';
+import fileProduct from '../../jsonDB/producto-curso.json';
+import MainComponent from '../main/index';
+import AsideComponent from '../firstcontent/aside/index.jsx';
 
 function MainContentComponents() {
 

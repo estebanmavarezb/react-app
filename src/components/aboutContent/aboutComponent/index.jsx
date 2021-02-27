@@ -1,4 +1,4 @@
-import image from '../../img/master-sushi.png'
+import image from '../../../img/master-sushi.png'
 
 function AboutComponent() {
         return (

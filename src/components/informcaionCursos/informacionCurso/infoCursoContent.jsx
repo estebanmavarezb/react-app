@@ -1,5 +1,5 @@
-import BtnAddCart from '../btncart';
-import ContadorComponent from '../contador';
+import BtnAddCart from '../../boton/btnCart/index.js';
+import ContadorComponent from '../../boton/contador/index.jsx';
 import {useState} from 'react';
 
 function InfoCursoContent({informacion}) {
@@ -9,7 +9,7 @@ function InfoCursoContent({informacion}) {
     return (
         <article className="curso grid">
             <div className="columnas-4">
-                <img src={require(`../../img/${informacion.img}`).default} alt="imagen curso" />
+                <img src={require(`../../../img/${informacion.img}`).default} alt="imagen curso" />
             </div>
             <div className="columnas-8">
                 <h4 className="no-margin">{informacion.name}</h4>

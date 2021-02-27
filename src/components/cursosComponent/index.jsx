@@ -1,5 +1,5 @@
 import image from '../../img/img-sushibar.png';
-import BtnInfoCurso from '../btnCusos/btnCrusos';
+import BtnInfoCurso from '../boton/btnCusos/btnCrusos';
 
 function CursosComponent({curso}) {
     return (

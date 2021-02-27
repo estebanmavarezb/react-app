@@ -1,5 +1,5 @@
 
-import BtnInfoComponent from '../btninfo/index';
+import BtnInfoComponent from '../boton/btninfo/index.jsx';
 
 function ItemBlogContainer({entry}) {
     return(
