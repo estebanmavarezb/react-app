@@ -2,8 +2,8 @@ import './mainContent.css'
 import React, {useEffect, useState} from 'react';
 import fileBlog from '../../jsonDB/producto-curso.json';
 import fileProduct from '../../jsonDB/producto-curso.json';
-import MainComponent from '../main/index';
-import AsideComponent from '../firstcontent/aside/index.jsx';
+import MainComponent from '../main/index.jsx';
+import AsideComponent from './aside/index.jsx';
 
 function MainContentComponents() {
 

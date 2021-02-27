@@ -1,4 +1,4 @@
-import ItemCourseComponent from '../../cursos/index'
+import ItemCourseComponent from '../../cursos/index.jsx'
 import './aside.css'
 
 function AsideComponent({product}) {

@@ -249,3 +249,60 @@ img {
 .img-producto {
   margin-left: 25px;
 }
+
+
+/*facturacion */
+
+@media (min-width: 900px) {
+  .facturacion {
+      width: 69.4rem;
+  }
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario input {
+  border: 1px solid #000000;
+}
+
+.form-control {
+  border: 1px solid #000000;
+}
+
+.formulario .campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+#nombre-apellido {
+  margin: 0;
+}
+
+
+@media (min-width: 900px) {
+
+  .form-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .formulario {
+      width: 69.4rem;
+  }
+
+  #nombre-apellido {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+      margin-bottom: 0;
+  }
+
+  #nombre-apellido input {
+      width: 100%;
+  }
+}

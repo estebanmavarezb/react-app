@@ -6,7 +6,7 @@ function AboutInfoContent({info}) {
             <h2 className="text-center">{info.name}</h2>
             <div className="grid">
                 <div className="columnas-6">
-                    <img src={require(`../../img/${info?.image}`).default} alt="" />
+                    <img src={require(`../../../img/${info?.image}`).default} alt="" />
                 </div>
                 <div className="columnas-6 al-center">
                     <p>{info.textoOne}</p>

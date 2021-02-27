@@ -1,5 +1,5 @@
 
-function CartContent() {
+function FacturacionContent() {
     return(
         <div className="productos">
             <div className="img-producto">
@@ -15,7 +15,7 @@ function CartContent() {
     )
 }
 
-export default CartContent
+export default FacturacionContent
 
 // import firebase from 'firebase/app';
 // import "@firebase/firestore";

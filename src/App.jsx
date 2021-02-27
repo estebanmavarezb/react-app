@@ -7,7 +7,9 @@ import ContactContentComponent from './components/contactContent';
 import AboutInfo from './components/contenido/info';
 import InfoCursosComponent from './components/informcaionCursos/infoCursosComponent';
 import CategoriasComponent from './components/categorias/categorias';
-import CartComponent from './components/cartComponent/cartComponent';
+import FacturacionComponent from './components/metodosCompra/facturacionComponent/facturacionComponent.jsx';
+import CartComponent from './components/metodosCompra/CartComponent/cartComponent';
+import FormComponent from './components/metodosCompra/formularioCompra/form';
 
 
 
@@ -40,6 +42,12 @@ function App() {
           </Route>
           <Route exact path="/cart">
             <CartComponent />
+          </Route>
+          <Route exact path="/formulario">
+            <FormComponent />
+          </Route>
+          <Route exact path="/facturacion">
+            <FacturacionComponent />
           </Route>
         </Switch>
       </Layout>

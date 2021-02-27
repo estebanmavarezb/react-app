@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {useParams} from 'react-router-dom';
 import fileInformacion from '../../jsonDB/informacion.json';
-import AboutInfoContent from '../informacion/infonContent';
+import AboutInfoContent from './informacion/infonContent.jsx';
 
 function AboutInfo() {
     const [informacion, setLeyenda] = useState({});

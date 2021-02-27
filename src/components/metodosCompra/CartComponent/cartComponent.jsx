@@ -1,9 +1,10 @@
-import CartContent from "../cartContent/cartContent";
+import BtnForm from "../../boton/btnform/btnform";
+import CartContent from "./cartContent/carContent";
 
 function CartComponent() {
     return (
         <div className="cart-container contenedor">
-            <h2 className="text-center">Facturacíon</h2>
+            <h2 className="text-center">Tus Compras</h2>
             <div className="contenedor-productos">
                 <div className="informacion-factura">
                     <p>Nombre</p>
@@ -23,6 +24,7 @@ function CartComponent() {
                     </div>
                 </div>
             </div>
+            <BtnForm />
         </div>
     )
 }
