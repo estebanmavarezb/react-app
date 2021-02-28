@@ -1,10 +1,17 @@
 import BtnAddCart from '../../boton/btnCart/index.js';
 import ContadorComponent from '../../boton/contador/index.jsx';
-import {useState} from 'react';
+import {useState, useContext} from 'react';
+import {CartContext} from '../../../context/cartContext';
+import {Link} from 'react-router-dom';
 
 function InfoCursoContent({informacion}) {
     const [count, setCount] = useState(1);
     if(Object.keys(informacion).length === 0) return null;
+
+    const context = useContext(CartContext)
+
+    const {isInCart} = context;
+    
     
     return (
         <article className="curso grid">
@@ -21,7 +28,7 @@ function InfoCursoContent({informacion}) {
 
             <div className="botones-cards">
                 <ContadorComponent count={count} setCount={setCount} cupo={informacion.cupo}/>
-                <BtnAddCart count={count}/>
+                {isInCart(informacion) ? (<Link to="/cart" className="btn btn-primario">Finalizar Compra</Link>) : (<BtnAddCart count={count} id={informacion.id}/>)}
             </div>
             </div>
             

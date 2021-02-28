@@ -10,6 +10,7 @@ import CategoriasComponent from './components/categorias/categorias';
 import FacturacionComponent from './components/metodosCompra/facturacionComponent/facturacionComponent.jsx';
 import CartComponent from './components/metodosCompra/CartComponent/cartComponent';
 import FormComponent from './components/metodosCompra/formularioCompra/form';
+import CartContextProvider from './context/cartContext';
 
 
 
@@ -18,6 +19,7 @@ function App() {
   return (
     <>
     <BrowserRouter>
+    <CartContextProvider>
       <Layout>
         <Switch>
           <Route exact path="/">
@@ -51,6 +53,7 @@ function App() {
           </Route>
         </Switch>
       </Layout>
+    </CartContextProvider>  
     </BrowserRouter>
       
     </>

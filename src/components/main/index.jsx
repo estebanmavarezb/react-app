@@ -10,7 +10,7 @@ function MainComponent({blog}) {
         <main className="blog">
             <h2>Nuestro Blog</h2>
             {blog.map(entry => (
-                <ItemBlogContainer entry={entry}/>
+                entry.categoria === 'curso' && <ItemBlogContainer entry={entry}/>
             ))}
         </main>
     );
