@@ -3,12 +3,13 @@ import {useContext} from 'react'
 
 function CartContent({producto}) {
     const context = useContext(CartContext);
-    const {deleteItems} = context;
+    const {deleteItems, cart} = context;
+
 
     return(
         <div className="productos">
             <div className="img-producto">
-                <img src="" alt="imagen del curso" />
+                <img src={require(`../../../../img/${producto.img}`).default} alt="imagen del curso" />
             </div>
             <div className="info-producto">
                 <p className="nombre">{producto.name}</p>
