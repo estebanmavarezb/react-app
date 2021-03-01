@@ -26,6 +26,7 @@ function InfoCursoContent({informacion}) {
 
                 <p className="descripcion">{informacion.description}</p>
 
+
             <div className="botones-cards">
                 <ContadorComponent count={count} setCount={setCount} cupo={informacion.cupo}/>
                 {isInCart(informacion) ? (<Link to="/cart" className="btn btn-primario">Finalizar Compra</Link>) : (<BtnAddCart count={count} id={informacion.id}/>)}
