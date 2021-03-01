@@ -8,7 +8,7 @@ function AsideComponent({product}) {
             
             <ul className="cursos-lista">
                 {product.map (prod => (
-                    <ItemCourseComponent prod={prod}/>
+                   prod.categoria === 'curso' && <ItemCourseComponent prod={prod}/>
                 ))}  
             </ul>
         </aside>
