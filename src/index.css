@@ -145,6 +145,19 @@ img {
   height: 100vh;
 }
 
+.carrito span {
+  position: absolute;
+  top: -15px;
+  background-color: black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  right: -15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .contenedor-productos {
   position: relative;
   overflow-y:auto;
@@ -155,7 +168,7 @@ img {
 
 .informacion-factura {
   display: flex;
-  width: 76%;
+  width: 80%;
   margin: 0 auto;
   align-items: center;
  justify-content: space-evenly;
@@ -188,6 +201,14 @@ img {
   max-height: 100%;
 }
 
+.info-productos .fecha{
+  padding-left: 20px;
+}
+
+
+.img-producto {
+  width: 10%;
+}
 
 
 .total-item {
@@ -305,4 +326,72 @@ img {
   #nombre-apellido input {
       width: 100%;
   }
+}
+
+/* modudlos carritos */
+
+.texto-carrito {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto-carrito p {
+  font-size: 4rem;
+}
+
+
+.botenes-cart {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.productos-carrito {
+  display: flex;
+  flex-direction: column;
+}
+
+.producto-carrito {
+  display: flex;
+  padding: 5px;
+}
+
+.producto-carrito p {
+  color: black;
+  flex: 0 0 calc(36% - 0rem);
+  font-size: 10px;
+}
+
+.producto-carrito .precio {
+  flex: 0 0 calc(30% - 0rem);
+}
+
+.btn-carrito {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  border-top: 1px solid black;
+}
+
+
+.btn-carrito .btn{
+  font-size: 12px;
+  padding: .5rem 1rem;
+  margin: 2rem 1rem;
+}
+
+.btn-carrito .btn:hover{
+ color: black;
+}
+
+#texto-view  p {
+  font-size: 18px !important;
+  color: black !important;
+}
+
+#texto-view   {
+  height: 30vh !important;
 }

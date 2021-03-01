@@ -5,12 +5,14 @@ import {CartContext} from '../../../context/cartContext';
 import {Link} from 'react-router-dom';
 
 function InfoCursoContent({informacion}) {
+    const context = useContext(CartContext);
+    const {isInCart} = context;
     const [count, setCount] = useState(1);
     if(Object.keys(informacion).length === 0) return null;
 
-    const context = useContext(CartContext)
+   
 
-    const {isInCart} = context;
+   
     
     
     return (

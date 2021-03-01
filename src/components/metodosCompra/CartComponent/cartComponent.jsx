@@ -2,6 +2,8 @@ import BtnForm from "../../boton/btnform/btnform";
 import CartContent from "./cartContent/carContent";
 import {useContext} from 'react';
 import {CartContext} from '../../../context/cartContext'
+import { Link } from "react-router-dom";
+import BtnVaciar from "../../boton/btnVaciar/btnVaciar";
 
 
 function CartComponent() {
@@ -20,13 +22,13 @@ function CartComponent() {
 
 
     return (
-        cart.length === 0 ? (<div className="text-center"><p>El Carrito esta vacion</p></div>) : (
+        cart.length === 0 ? (<div className="texto-carrito text-center"><p>El Carrito esta vacio</p><Link to="/categoria/cursos" className="btn btn-primario">Realiza una Compra</Link> </div>) : (
             <div className="cart-container contenedor">
             <h2 className="text-center">Tus Compras</h2>
             <div className="contenedor-productos">
                 <div className="informacion-factura">
                     <p>Nombre</p>
-                    <p>Fecha de Inicio</p>
+                    <p>Cantidad de Cursos</p>
                     <p>Precio del Curso</p>
                     <p>Eliminar producto</p>
                 </div>
@@ -44,7 +46,10 @@ function CartComponent() {
                     </div>
                 </div>
             </div>
-            <BtnForm />
+            <div className="botenes-cart">
+                <BtnVaciar />
+                <BtnForm />
+            </div>
         </div>
         )
         
