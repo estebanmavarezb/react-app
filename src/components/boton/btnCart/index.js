@@ -1,6 +1,7 @@
 import '../btninfo/btninfo.css'
 import {useContext} from 'react';
 import {CartContext} from '../../../context/cartContext';
+import { Link } from 'react-router-dom';
 
 function BtnAddCart({count, id}) {
 
@@ -12,7 +13,7 @@ function BtnAddCart({count, id}) {
     }
 
     return(
-        <button href="" className="btn btn-primario" onClick={() => agregarCart(count, id)}>Agregar Carrito</button>
+        <Link className="btn btn-primario" onClick={() => agregarCart(count, id)}>Agregar Carrito</Link>
     )
 }
 

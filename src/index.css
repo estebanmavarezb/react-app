@@ -115,6 +115,13 @@ img {
 
 .botones {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.botones .btn {
+  font-size: 14px;
+  padding: 1rem;
+  flex: 0 0 calc(48% - 0rem);
 }
 
 .botones .btn:nth-child(1){
