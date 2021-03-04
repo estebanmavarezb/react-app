@@ -43,8 +43,6 @@ function CartWidget(){
                   </div>
               </div>
             </div>
-        
-        
     );
   }
 

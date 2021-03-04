@@ -12,6 +12,8 @@ function AboutInfo() {
        setLeyenda(fileInfo)
     }, [id])
 
+    
+
     return (
         <main className="contenedor">
             <AboutInfoContent info={informacion} />

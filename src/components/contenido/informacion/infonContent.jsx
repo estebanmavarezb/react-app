@@ -1,6 +1,8 @@
 
 function AboutInfoContent({info}) {
     if(info.image === undefined) return null;
+
+    console.log(info)
     return (
         <div>
             <h2 className="text-center">{info.name}</h2>
