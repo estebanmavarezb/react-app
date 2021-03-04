@@ -21,4 +21,5 @@ function InfoCursosComponent() {
     )
 }
 
+
 export default InfoCursosComponent

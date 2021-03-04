@@ -21,4 +21,5 @@ function CartContent({producto}) {
     )
 }
 
+
 export default CartContent

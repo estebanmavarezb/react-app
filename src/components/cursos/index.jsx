@@ -24,6 +24,7 @@ function ItemCourseComponent({prod}) {
             </li>
         </li>
     )
+    
 }
 
 export default ItemCourseComponent
