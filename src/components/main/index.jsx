@@ -3,14 +3,13 @@ import ItemBlogContainer from '../contenidoblog/index.jsx'
 
 function MainComponent({blog}) {
     
-    
     return (
 
 
         <main className="blog">
             <h2>Nuestro Blog</h2>
             {blog.map(entry => (
-                entry.categoria === 'curso' && <ItemBlogContainer entry={entry}/>
+                <ItemBlogContainer entry={entry}/>
             ))}
         </main>
     );

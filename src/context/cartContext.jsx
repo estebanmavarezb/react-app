@@ -1,15 +1,21 @@
 import React, {createContext, useState} from 'react';
 import fileProduct from '../jsonDB/producto-curso.json'
+import { getFirestore } from '../firebase/index';
 
 export const CartContext = createContext();
 
 function CartContextProvider({children}) {
     const [cart, setCart] = useState([]);
 
-    function addCart(cantidad, id) {
-        const producto = fileProduct.find(prod => prod.id === id)
+    async function addCart(cantidad, id) {
 
-        console.log(producto)
+        const db = getFirestore();
+        const itemCollection = db.collection('productos');
+        const getItem = await itemCollection.doc(id).get();
+        const producto =  {...getItem.data(), id: getItem.id}
+
+
+    console.log(producto)
 
         if(isInCart(producto)) {
             cart[cart.indexOf(producto)].cantidad += cantidad;
@@ -34,7 +40,9 @@ function CartContextProvider({children}) {
     }
 
     function isInCart(producto) {
-        if(cart.includes(producto)) {
+        const test = cart.find(prod => prod.id === producto.id )
+
+        if(test) {
             return true
         }else {
             return false

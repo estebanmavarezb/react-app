@@ -10,7 +10,7 @@ function FacturacionComponent() {
                     <p>Nombre</p>
                     <p>Fecha de Inicio</p>
                     <p>Precio del Curso</p>
-                    <p>Eliminar producto</p>
+
                 </div>
                 <div className="info-productos">
                     <FacturacionContent />

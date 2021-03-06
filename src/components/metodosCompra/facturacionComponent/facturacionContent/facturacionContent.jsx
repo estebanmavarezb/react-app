@@ -1,17 +1,26 @@
+import {CartContext} from '../../../../context/cartContext'
+import {useContext} from 'react'
 
 function FacturacionContent() {
+    const context = useContext(CartContext);
+    const {deleteItems, cart} = context;
+
     return(
-        <div className="productos">
-            <div className="img-producto">
-                <img src="" alt="imagen del curso" />
+        cart.map(producto =>{
+            const image = require(`../../../../img/${producto.image}`).default
+            return(
+                <div className="productos">
+                <div className="img-producto">
+                    <img src={image} alt="imagen del curso" />
+                </div>
+                <div className="info-producto">
+                    <p className="nombre">{producto.name}</p>
+                    <p className="fecha">05/10/2021</p>
+                    <p className="precio">${producto.price * producto.cantidad}</p>
+                </div>
             </div>
-            <div className="info-producto">
-                <p className="nombre">Curso sushi</p>
-                <p className="fecha">05/10/2021</p>
-                <p className="precio">$5000</p>
-            </div>
-            <button href="" className="btn-cart btn  btn-primario">x</button>
-        </div>
+            )
+        })
     )
 }
 

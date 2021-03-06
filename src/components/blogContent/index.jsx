@@ -2,23 +2,13 @@ import React, {useEffect, useState} from 'react';
 import fileBlog from '../../jsonDB/producto-curso.json';
 import MainComponent from '../main';
 
-function BlogComponents() {
+function BlogComponents({info}) {
 
-    const [blog, setBlog] = useState([]);
 
-    function getData(data) {
-        return new Promise((resolve, reject) =>{
-            resolve(data)
-        })
-    }
-
-    useEffect(() => {
-        getData(fileBlog).then(result => setBlog(result));
-    }, [])
     
     return (
         <div className="contenido-principal blog-interno contenedor">
-            <MainComponent blog={blog}/>
+            <MainComponent blog={info}/>
         </div>
     )
 }

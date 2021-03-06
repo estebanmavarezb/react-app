@@ -9,7 +9,7 @@ import {CartContext} from '../../context/cartContext'
 function ItemCourseComponent({prod}) {
     const [count, setCount] = useState(1);
     const context = useContext(CartContext)
-
+     console.log(prod.id)
     const {isInCart} = context;
     return (
         <li className="curso">
