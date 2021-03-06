@@ -8,3 +8,5 @@ function BtnInfoComponent({id}) {
 }
 
 export default BtnInfoComponent
+
+

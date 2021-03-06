@@ -25,22 +25,14 @@ function App() {
           <Route exact path="/">
             <MainContentComponents />
           </Route>
-          
-          <Route exact path="/informacionCursos/:id">
-            <InfoCursosComponent />
-          </Route>
-          <Route exact path="/categoria/:categoria">
-            <CategoriasComponent />
-          </Route>
           <Route exact path="/about-us">
             <AboutContent />
           </Route>
-         
           <Route exact path="/contact">
             <ContactContentComponent />
           </Route>
-          <Route exact path="/informacion/:id">
-            <AboutInfo />
+          <Route exact path="/categoria/:categoria">
+            <CategoriasComponent />
           </Route>
           <Route exact path="/cart">
             <CartComponent />
@@ -51,6 +43,11 @@ function App() {
           <Route exact path="/facturacion">
             <FacturacionComponent />
           </Route>
+
+          <Route exact path="/informacion/:id">
+            <AboutInfo />
+          </Route>
+
         </Switch>
       </Layout>
     </CartContextProvider>  

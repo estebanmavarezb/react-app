@@ -2,22 +2,29 @@ import {useParams} from 'react-router-dom';
 import {useEffect, useState} from 'react';
 import BlogComponents from '../blogContent';
 import CursosContentComponents from '../cursosContent';
+import { getFirestore } from '../../firebase/index';
+
 
 function CategoriasComponent() {
     const {categoria} = useParams()
-    const [categorias, setCategorias] = useState(false)
+    const [info, setInfo] = useState([])
     
     useEffect(() => {
-        if(categoria === 'cursos') {
-            setCategorias(true)
-        } else (
-            setCategorias(false)
-        )
+
+
+
+        const db = getFirestore();
+        const itemCollection = db.collection('productos');
+        const itemPerCategory = itemCollection.where('categoria', '==', categoria)
+        itemPerCategory.get().then((querySnapshot) => {
+            const items = (querySnapshot.docs.map(doc => ({...doc.data(), id: doc.id})));
+            setInfo(items)
+        })
     },[categoria])
 
     return(
         <>
-            {categorias ? <CursosContentComponents /> : <BlogComponents />}
+            {categoria === 'cursos' ? <CursosContentComponents info={info}/> : <BlogComponents info={info}/>}
         </>
     )
 }

@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {useParams} from 'react-router-dom';
-import fileInformacionCurso from '../../jsonDB/producto-curso.json';
 import InfoCursoContent from './informacionCurso/infoCursoContent.jsx';
+import { getFirestore } from '../../firebase/index';
 
 function InfoCursosComponent() {
 
@@ -9,8 +9,11 @@ function InfoCursosComponent() {
     const {id} = useParams();
 
     useEffect(() => {
-       const fileInfo = fileInformacionCurso.find(info => info.id === parseInt(id))
-       setCurso(fileInfo)
+        const db = getFirestore();
+        const itemCollection = db.collection('productos');
+        itemCollection.doc(id).get().then((querySnapshot) => {
+            setCurso({...querySnapshot.data(), id: querySnapshot.id})          
+        })
     }, [id])
 
     return (

@@ -32,7 +32,7 @@ function NavBarComponent(){
         </div>
             <ul>
                 <li><NavLink to={`/about-us`}>Nosotros</NavLink></li>
-                <li><NavLink to={`/categoria/contenido-blog`}>Blog</NavLink></li>
+                <li><NavLink to={`/categoria/blog`}>Blog</NavLink></li>
                 <li><NavLink to={`/categoria/cursos`}>Cursos</NavLink></li>
                 <li><NavLink to={`/contact`}>Contacto</NavLink></li>
                 <li><NavLink to={`/cart`}><CartWidget /></NavLink></li>
