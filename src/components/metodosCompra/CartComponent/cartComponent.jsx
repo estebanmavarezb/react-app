@@ -8,10 +8,11 @@ import BtnVaciar from "../../boton/btnVaciar/btnVaciar";
 
 function CartComponent() {
     const context = useContext(CartContext);
-    const {cart} = context;
+    const {cart, setTotal} = context;
 
     function sumaTotal() {
-        const total = cart.reduce((sumatotal, producto) => sumatotal += (producto.price * producto.cantidad), 0).toFixed(2)
+        const total = cart.reduce((sumatotal, producto) => sumatotal += (producto.price * producto.cantidad), 0).toFixed(2);
+        setTotal(total)
         return total
     }
 
