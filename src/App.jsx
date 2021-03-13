@@ -11,6 +11,7 @@ import FacturacionComponent from './components/metodosCompra/facturacionComponen
 import CartComponent from './components/metodosCompra/CartComponent/cartComponent';
 import FormComponent from './components/metodosCompra/formularioCompra/form';
 import CartContextProvider from './context/cartContext';
+import OrderContextProvider from './context/orderContext';
 
 
 
@@ -20,7 +21,8 @@ function App() {
     <>
     <BrowserRouter>
     <CartContextProvider>
-      <Layout>
+    <OrderContextProvider>
+    <Layout>
         <Switch>
           <Route exact path="/">
             <MainContentComponents />
@@ -50,7 +52,8 @@ function App() {
 
         </Switch>
       </Layout>
-    </CartContextProvider>  
+    </OrderContextProvider>
+    </CartContextProvider>
     </BrowserRouter>
       
     </>
