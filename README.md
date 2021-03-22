@@ -1,3 +1,30 @@
+#Proyecto BlogDeSushi
+
+Este mi primer proyecto de react tiene contenido que vi desde el comienzo del curso y lo fui modificando a medida que avanzaba el aprendizaje,
+conserve algunas cosas que vi al comienzo asi tenerlo como una biblioteca, es decir que cuando no recuerde algo tengo esta base del proyecto y conseguire varias formas de
+realizar lo que necesito.
+
+#Resumen
+
+La pagina se basa en una plataforma la cual vende cursos de sushi, mas adelante reformare todo el proyecto organizandolo mejor y agregnadole mas contenido con la idea de poder crear un metodo para qu el usuario pueda registrarse y habilitar una seccion donde se encuentren los videos asi que pronto tendremos una nueva actualizacion de este proyecto :D
+
+#Contendio
+
+Se utilizo todo lo visto en el curso de React, se agrego:
+
+-hooks
+-firebase
+-se aprendio a realizar el proyecto por componentes
+-se utilizaron varios metodos para darle forma al proyecto
+-tantos los textos como las imagenes al principio las mostraba desde un JSON interno pero ahora las traemos de Firebase
+-Al final de la compra se registra la compra de los curso adquiridos, la idea es que mas adelante se agregara el usuario para que la persona pueda ver los cursos como en una plataforma online. Por el momento solo hay 3 cursos.
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
